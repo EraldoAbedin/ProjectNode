@@ -6,8 +6,7 @@ const list = JSON.parse(fs.readFileSync("/mnt/c/Users/User/Desktop/ProjectNode/a
 const bothLs = conc.Concated(array, list);
 
 //synchronized
-console.log("array: " + array);
-console.log("bothLs: " + bothLs);
+console.log("array: " + array + "\t" + "bothLs: " + bothLs);
 
 //asynchronized
 let promise = new Promise((resolve, reject) => {
