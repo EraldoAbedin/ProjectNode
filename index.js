@@ -7,5 +7,15 @@ const array = [10, 32, 36, 76];
 const list = JSON.parse(fs.readFileSync("./numbers.json")).numbers;
 const bothLs = conc.concat(array, list);
 
-console.log(`Sum of element in array ${sum.Sum(bothLs)}`);
-console.log(sumOSq.sumOfSquares(10));
+//synchronized
+console.log("array: " + array);
+console.log("bothLs: " + bothLs);
+
+//asynchronized
+let promise = new Promise((resolve, reject) => {
+    (bothLs.length > array.length) ? resolve("bothLs will be displayed: ") : reject("bothLs can't be displayed!")
+})
+promise.then(
+    (message) => console.log(message + bothLs)
+).catch((message) => console.log(message))
+
