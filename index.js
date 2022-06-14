@@ -19,3 +19,10 @@ promise.then(
     (message) => console.log(message + bothLs)
 ).catch((message) => console.log(message))
 
+
+setTimeout(() => {
+    console.log("array: " + array);
+}, 3000)
+setTimeout(() => {
+    console.log("bothLs: " + bothLs);
+}, 2000)
