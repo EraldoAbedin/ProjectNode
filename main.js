@@ -1,1 +1,0 @@
-require("/mnt/c/Users/User/Desktop/ProjectNode/app/index.js");
